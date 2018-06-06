@@ -1,0 +1,1 @@
+This is the AES hash amd64 machine code from Go pulled out so you can call it without lots of overhead
