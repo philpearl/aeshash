@@ -4,9 +4,9 @@ import "unsafe"
 
 func aeshashstr(p unsafe.Pointer, h uintptr) uintptr
 
-// AESHash hashes the given string using the algorithm used by Go's hash tables
+// Hash hashes the given string using the algorithm used by Go's hash tables
 // God knows what it really is.
-func AESHash(key string) uint32 {
+func Hash(key string) uint32 {
 	return uint32(aeshashstr(noescape(unsafe.Pointer(&key)), 0))
 }
 

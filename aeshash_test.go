@@ -7,7 +7,7 @@ import (
 )
 
 func TestAESHash(t *testing.T) {
-	val := aeshash.AESHash("cheese")
+	val := aeshash.Hash("cheese")
 	if val != 1315767268 {
 		t.Errorf("Expected 1315767268, got %d", val)
 	}
